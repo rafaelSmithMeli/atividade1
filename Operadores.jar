@@ -1,0 +1,89 @@
+package Operadores;
+
+import java.util.*;
+
+public class Atividade1 {
+    public static void main(String[] args) {
+        float sal, abn;
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite o Salário:");
+        sal = ler.nextFloat();
+
+        System.out.println("Digite o Abono:");
+        abn = ler.nextFloat();
+
+        System.out.println("\n O salário total é :" + (sal + abn));
+    }
+}
+package Operadores;
+
+import java.util.*;
+
+public class Atividade2 {
+    public static void main(String[] args) {
+        float nota1, nota2, nota3, nota4;
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite primeira nota:");
+        nota1 = ler.nextFloat();
+        System.out.println("Digite segunda nota:");
+        nota2 = ler.nextFloat();
+        System.out.println("Digite terceira nota:");
+        nota3 = ler.nextFloat();
+        System.out.println("Digite quarta nota:");
+        nota4 = ler.nextFloat();
+
+        System.out.println("\n A média é:" + (nota1 + nota2 + nota3 + nota4) / 4);
+    }
+}
+package Operadores;
+
+import java.util.Scanner;
+
+public class Atividade3 {
+    public static void main(String[] args) {
+        float salbrt, adcn, hex, desc, salarioLiquido;
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite o salário bruto:");
+        salbrt = ler.nextFloat();
+        System.out.println("Digite o adicional noturno:");
+        adcn = ler.nextFloat();
+        System.out.println("Digite as horas extras:");
+        hex = ler.nextFloat();
+        System.out.println("Imforme descontos:");
+        desc = ler.nextFloat();
+
+        salarioLiquido = salbrt + adcn + (hex * 5) - desc;
+
+        System.out.printf("\n Salário liquido: %.2f", salarioLiquido);
+    }
+}
+package Operadores;
+
+import java.util.Scanner;
+
+public class Atividade4 {
+    public static void main(String[] args) {
+        float num1, num2, num3, num4, dif;
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite o primeiro número:");
+        num1 = ler.nextFloat();
+        System.out.println("Digite o segundo número:");
+        num2 = ler.nextFloat();
+        System.out.println("Digite o terceiro número:");
+        num3 = ler.nextFloat();
+        System.out.println("Digite o quarto número:");
+        num4 = ler.nextFloat();
+
+        dif = (num1 * num2) - (num3 * num4);
+
+        System.out.printf("\n Diferença: %.2f", dif);
+    }
+}
